@@ -1,0 +1,121 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navagtion{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: blue;
+}
+.logo h2{
+color: white;
+font-size: 30px;
+margin-left: 20px;
+}
+.menu>ul{
+display: flex;
+padding: 20px;
+}
+.menu>ul>li{
+list-style: none;
+
+}
+.menu>ul>li>a{
+padding: 20px;
+text-decoration: none;
+color: white;
+font-size: 20px;
+border-right: 1px solid white;
+transition: 0.5s;
+
+}
+.menu>ul>li:first-child>a{
+border-left: 1px solid white;
+
+}
+.menu>ul>li:hover>a{
+background-color: brown;
+
+}
+.bar{
+width: 150px;
+background-color: aqua;
+margin-top: 20px;
+position: absolute;
+text-align: center;
+opacity: 0;
+visibility: 0;
+transition: 0.5s;
+transform: scaleY(0);
+transform-origin: top;
+
+}
+.bar>li{
+list-style: none;
+padding: 7px;
+border-bottom: 1px solid white;
+transition: 0.5s;
+}
+.bar>li:hover{
+background-color: brown;
+
+}
+
+
+.bar>li>a{
+text-decoration: none;
+color: white;
+}
+.menu>ul>li:hover>ul{
+opacity: 1;
+visibility: visible;
+transform: scaleY(1);
+
+
+}
+.hero-area{
+background-image: url(web\ header\ \(1\).jpg);
+background-position: center;
+background-size: cover;
+height: 100vh;
+text-align: center;
+padding-top: 180px;
+
+}
+.hero-area>h4{
+padding: 10px 0;
+
+}
+.hero-area>h2{
+width: 190px;
+background-color: blue;
+margin: auto;
+color: white;
+padding: 10px;
+border-radius: 35px 30px 50px 1px;
+
+}
+.ll{
+margin: 10px 0;
+
+}
+.ll>a>i{
+color: black;
+width: 50px;
+height: 50px;
+border: 1px solid black;
+border-radius: 50%;
+background-color: rgba(0, 0, 255, 0.144);
+line-height: 2.5;
+transition: 0.5s;
+font-size: 20px;
+
+}
+.ll>a>i:hover{
+transform: rotate(360deg);
+background-color: aquamarine;
+
+}
+
